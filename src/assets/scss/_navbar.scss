@@ -1,0 +1,74 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 1rem 4rem;
+  background: var(--navBackground);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  @media (min-width: 640px) and (max-width: 968px) {
+    padding: 1rem 2.5rem;
+  }
+  @media (max-width: 640px) {
+    padding: 1rem;
+  }
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    @media (max-width: 640px) {
+      column-gap: 12px;
+    }
+    .nav-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4px;
+      position: relative;
+      cursor: pointer;
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--darkOrange);
+        border-radius: 50%;
+        font-size: 22px;
+        min-width: 32px;
+        height: 32px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 640px) {
+          height: 22px;
+          min-width: 22px;
+          font-size: 14px;
+        }
+      }
+      img {
+        width: 88px;
+        height: 88px;
+        @media (max-width: 968px) {
+          width: 44px;
+          height: 44px;
+        }
+      }
+      .icon-title {
+        font-size: 18px;
+        @media (min-width: 640px) and (max-width: 968px) {
+          font-size: 16px;
+        }
+        @media (max-width: 640px) {
+          display: none;
+        }
+      }
+    }
+    .constructor-image {
+      .icon-title {
+        color: var(--orange);
+      }
+    }
+  }
+}

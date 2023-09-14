@@ -1,0 +1,69 @@
+.loader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 8px solid #f1c40f;
+  border-top-color: #e67e22;
+  animation: spin 1s linear infinite;
+}
+
+.slice:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.875s;
+}
+
+.slice:nth-child(2) {
+  transform: rotate(45deg);
+  animation-delay: -0.75s;
+}
+
+.slice:nth-child(3) {
+  transform: rotate(90deg);
+  animation-delay: -0.625s;
+}
+
+.slice:nth-child(4) {
+  transform: rotate(135deg);
+  animation-delay: -0.5s;
+}
+
+.slice:nth-child(5) {
+  transform: rotate(180deg);
+  animation-delay: -0.375s;
+}
+
+.slice:nth-child(6) {
+  transform: rotate(225deg);
+  animation-delay: -0.25s;
+}
+
+.slice:nth-child(7) {
+  transform: rotate(270deg);
+  animation-delay: -0.125s;
+}
+
+.slice:nth-child(8) {
+  transform: rotate(315deg);
+  animation-delay: 0s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

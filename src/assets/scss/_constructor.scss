@@ -1,0 +1,84 @@
+.bigline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 50%;
+  border: 5px dashed var(--white);
+  animation: rotate 70s linear infinite;
+  @media (min-width: 1700px) {
+    width: 700px;
+    height: 700px;
+  }
+  @media (min-width: 1440px) and (max-width: 1700px) {
+    width: 500px;
+    height: 500px;
+  }
+  .bigline-text {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    rotate: -90deg;
+    font-size: 30px;
+  }
+}
+
+.standartline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px dashed var(--white);
+  animation: rotate 60s linear infinite;
+  @media (min-width: 1700px) {
+    width: 550px;
+    height: 550px;
+  }
+  @media (min-width: 1440px) and (max-width: 1700px) {
+    width: 350px;
+    height: 350px;
+  }
+  .standartline-text {
+    position: absolute;
+    top: 50%;
+    left: -17%;
+    rotate: -90deg;
+    font-size: 30px;
+  }
+}
+
+.smallline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px dashed var(--white);
+  animation: rotate 50s linear infinite;
+  @media (min-width: 1700px) {
+    width: 400px;
+    height: 400px;
+  }
+  @media (min-width: 1440px) and (max-width: 1700px) {
+    width: 200px;
+    height: 200px;
+  }
+  .smallline-text {
+    position: absolute;
+    top: 50%;
+    left: -27%;
+    rotate: -90deg;
+    font-size: 30px;
+  }
+}
+
+// keyframes
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

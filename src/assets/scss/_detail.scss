@@ -1,0 +1,78 @@
+.detail {
+  display: flex;
+  gap: 2rem;
+  .gallery {
+    min-width: 40%;
+    width: 40%;
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 20px;
+    }
+  }
+  .detail-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    width: 50%;
+    .info-title {
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .info-desc {
+      color: var(--gray);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 1rem;
+      font-family: "Futura PT Book" !important;
+    }
+    .info-character {
+      display: flex;
+      margin-bottom: 1rem;
+      .dots {
+        border-bottom: 2px dotted var(--gray);
+        margin-right: 10px;
+        width: 100%;
+      }
+      div {
+        color: var(--gray);
+        font-size: 20px;
+        font-family: "Futura PT Book" !important;
+      }
+    }
+    .info-main-title {
+      font-size: 22px;
+    }
+    .info-footer {
+      margin-top: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .cart-price {
+        color: var(--yellow);
+        font-size: 45px;
+        margin-top: 10px;
+      }
+      .cart-basket {
+        width: 83px;
+        height: 83px;
+        border-radius: 50%;
+        background: var(--yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 1px 17px 0px #e57b004d;
+        border: none;
+        cursor: pointer;
+        svg {
+          min-width: 45px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
